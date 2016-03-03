@@ -2,18 +2,19 @@
 <h1><%= @user.name %></h1>
 <img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
 
-<ul>
-	<% @forms.each do |form| %>
-		<li>
-			<%= form.answer%> 
-			<%= form.answerb%> 
-			<%= form.answerc %>
-			<%= form.answerd %>
-			<%= link_to('Edit', edit_user_form_path(@user, form)) %>
-			<%= link_to('Delete', user_form_path(@user, form), method: :delete, data: {confirm: 'Are you sure?'}) %>
-		</li>
-	<% end %>
-</ul>
+<!-- <ul> -->
+	<%# @forms.each do |form| %>
+		<!-- <li>
+			<%#= form.answer%> 
+			<%#= form.answerb%> 
+			<%#= form.answerc %>
+			<%#= form.answerd %>
+			<%#= link_to('Edit', edit_user_form_path(@user, form)) %>
+			<%#= link_to('Delete', user_form_path(@user, form), method: :delete, data: {confirm: 'Are you sure?'}) %>
+
+		</li> -->
+	<%# end %>
+<!-- </ul> -->
 
  </div> 
 <div>

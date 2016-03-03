@@ -1,0 +1,42 @@
+
+<div>
+<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
+<%# if @form.errors.any? %>
+	<!-- <ul>
+		<%# @form.errors.full_messages.each do |error_msg| %>
+			<li><%#= error_msg %></li>
+		<%# end %>
+	</ul> -->
+<%# end %>
+<div class="form_fiance">
+
+<%= form_for [@user, @form],:url => {:action => "new_create", :id => @user} do |f| %>
+	<%= f.label :answer, 'Is the petitioner a U.S citizen?' %>:
+	<%#= f.label "Is the petitioner a U.S citizen?"%><br>
+	<%= f.label :answer, 'True' %>
+	<%= f.radio_button :answer, "true", :value=> true%>
+	<%= f.label :answer, "False" %>
+	<%= f.radio_button :answer, "false", :value=> false%>
+	<br>
+	<%= f.label :answerb, "Do you intend to marry within 90 days of your fiancė's admission to the U.S and you are bot free to marry?" %><br>
+	<%= f.label :answerb, "True" %>
+	<%= f.radio_button :answerb, "true", :value=> true%>
+	<%= f.label :answerb, "False" %>
+	<%= f.radio_button :answerb, "false", :value=> false%>
+	<br>
+	<%= f.label "Have you met in person within two years before filling the petition or  can you  establish that this requirement would violate strict and long-stablished customs of you or your fiancė's foreign culture or social practice?" %><br>
+	<%= f.label :answerc, 'True' %>
+	<%= f.radio_button :answerc, "true", :value=> true%>
+	<%= f.label :answerc, 'False' %>
+	<%= f.radio_button :answerc, "false", :value=> false%>
+	<br>
+	<%= f.label " Can you establish that the requirement  to meet your fiancė in person would result in extreme hardship to you?" %><br>
+	<%= f.label :answerd, 'True' %>
+	<%= f.radio_button :answerd, "true", :value=> true%>
+	<%= f.label :answerd, 'False' %>
+	<%= f.radio_button :answerd, "false", :value=> false%>
+	<br>
+	<%= f.submit 'Save' %>
+	<%= link_to('Back', user_forms_path(@user)) %>
+<% end %>
+</div>

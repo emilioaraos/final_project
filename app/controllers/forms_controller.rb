@@ -70,9 +70,43 @@ class FormsController < ApplicationController
 		end
 	end
 
+	def naturalization
+		@user= User.find_by(id: params[:user_id])
+		@form = @user.forms.new
+	end
+
+
+	def new_create
+		falseAnswer = false
+		params[:form].each do | key, value |
+			if value == "false"
+				falseAnswer = true
+			else value == "true"
+				falseAnswer == false
+			end
+		end
+		@user = User.find(params[:user_id])
+		@form = @user.forms.new(form_params)
+
+		if @form.save
+			flash[:notice] = 'Form created successfully'
+			if falseAnswer==true 
+				redirect_to action: 'contact', controller: 'site', user_id: @user.id
+			else falseAnswer== false
+				redirect_to action: 'support', controller: 'site', user_id: @user.id
+			end
+
+		else
+			flash[:alert] = 'There was an error'
+			render 'new'
+		end
+	end
+
 	private
 
 	def form_params
 		params.require(:form).permit(:answer, :answerb, :answerc, :answerd)
 	end
+
+
 end

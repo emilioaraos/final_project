@@ -3,6 +3,7 @@ Rails.application.routes.draw do
    get 'site/about'
    get 'site/contact'
    get 'site/perse'
+   get 'site/support'
    get '/users/user_form' => 'users#user_form'
 
   unauthenticated :user do 
@@ -15,10 +16,11 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { registrations: "registrations" }
   resources(:users, only: [:show, :new, :create, :index]) do
-  resources(:forms, only: [:new, :create, :index, :update, :edit, :destroy])
+  resources(:forms, only: [:new, :create, :index, :update, :edit, :destroy,:naturalization])
 
    get '/users/:id', to: 'users#show'
-
+   get '/naturalization' =>'forms#naturalization'
+   post '/support'=>'forms#new_create'
 end
   
 
