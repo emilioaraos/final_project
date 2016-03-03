@@ -1,9 +1,45 @@
 <% provide(:title, "Contact") %>
 
+<div>
+<img src="/assets/background.jpg" alt="background" class="background2">
 
-    <h1>Contact a lawyer</h1>
+
+
+	<h2> List of Non profits lawyers that you may find helpful</h2>
+		
+	<table>
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+	        <th>Web page</th>
+	        <th>Location</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td data-label="First Name">Bruce</td>
+	        <td data-label="Last Name">Wayne</td>
+	        <td data-label="Hero Title">Batman</td>
+	      </tr>
+	      <tr>
+	        <td data-label="First Name">Peter</td>
+	        <td data-label="Last Name">Parker</td>
+	        <td data-label="Hero Title">Spiderman</td>
+	      </tr>
+	      <tr>
+	        <td data-label="First Name">Bruce</td>
+	        <td data-label="Last Name">Banner</td>
+	        <td data-label="Hero Title">The Hulk</td>
+	      </tr>
+	      <tr>
+	        <td data-label="First Name">Clark</td>
+	        <td data-label="Last Name">Kent</td>
+	        <td data-label="Hero Title">Superman</td>
+	      </tr>
+	    </tbody>
+	</table>
     
 
 
     <div> <%= link_to "Logout", destroy_user_session_path, data: { method: :delete } %> </div>  
- 
+ </div>
