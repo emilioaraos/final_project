@@ -1,0 +1,10 @@
+<!-- <h1>Projects#index</h1> -->
+<ul>
+	<% @users.each do |p| %>
+		<li>
+			<%= link_to(p.name, user_forms_path(p)) %>
+		
+		</li>
+	<% end %>
+</ul>
+<!-- <p>Find me in app/views/projects/index.html.erb</p> -->

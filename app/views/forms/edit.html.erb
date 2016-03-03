@@ -1,0 +1,23 @@
+<% if @form.errors.any? %>
+	<ul>
+		<% @form.errors.full_messages.each do |error_msg| %>
+			<li><%= error_msg %></li>
+		<% end %>
+	</ul>
+<% end %>
+<%= form_for [@user, @form] do |f| %>
+	<%= f.label :answer %>
+	<%= f.text_field :answer %>
+	<br>
+	<%= f.label :answerb %>
+	<%= f.text_field :answerb %>
+	<br>
+	<%= f.label :answerc%>
+	<%= f.text_field :answerc %>
+	<br>
+	<%= f.label :answerd%>
+	<%= f.text_field :answerd %>
+	<br>
+	<%= f.submit 'Edit' %>
+	<%= link_to('Back', user_forms_path(@user)) %>
+<% end %>
