@@ -5,6 +5,148 @@
 // .k1 {
 //   float: left;
 // }
+
+//home
+.nav-row {
+  padding-top: 0px;
+  height: 46px;
+  color: #5F9EA0;
+  // background-color: blue;
+}
+
+.row1{
+  font-size:34px;
+  
+  color: #5F9EA0 ;
+
+  
+
+
+}
+#color-nav{ 
+  color: #5F9EA0;
+
+}
+
+.nav-right{
+  padding-top: 15px;
+  float: right;
+}
+
+.col1{
+  height:46px;
+ 
+
+}
+
+.col2{
+   font-family: fantasy;
+  color: green;
+  font-size: 20px;
+}
+
+
+.liberty{
+  min-height: 100%;
+  margin-left:-35px;
+  margin-right: -35px;
+  max-height: 600px;
+  box-shadow: 10px 10px 5px #888888;
+
+
+
+
+}
+
+.sign_up{
+text-align:center ;
+padding-top:25px;
+
+}
+.welcome-row {
+  height: 468px;
+  
+  font-family: bold;
+  color: #fff;
+  font-size: 100px;
+  text-align:center;
+}
+
+.search-nav-row {
+  height: 104px;
+  background-color: white;
+}
+
+.city-picture {
+  border: 2px solid white;
+  margin-bottom: 3px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+}
+
+.sing_up2{
+  text-align:center ;
+  padding-top:25px;
+
+}
+.foot{
+  text-align: center;
+}
+
+.log_in{
+  text-align:center ;
+  padding-top:25px;
+}
+.disclosure{
+  font-weight:bold;
+   text-align: justify;
+}
+.disclosure2{
+
+   text-align: justify;
+}
+
+.form1{
+   text-align:center ;
+   padding-top:25px;
+}
+.form2{
+   text-align:center ;
+   padding-top:25px;
+}
+
+.form_page{
+   text-align:center ;
+   padding-top:25px;
+}
+.form_page2{
+   text-align:center ;
+   padding-top:25px;
+}
+.form_edit{
+   text-align:center ;
+   padding-top:25px;
+}
+.about{
+   text-align:center ;
+   padding-top:25px;
+}
+
+.video{
+
+    text-align:center ;
+   padding-top:25px;
+}
+.contact{
+   text-align:center ;
+   padding-top:25px;
+   color: white;
+
+}
+.titulo{
+  color:black;
+}
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -60,20 +202,16 @@
 
 }
 
-.close:hover { background: #00d9ff;
-
-
+.close:hover { 
+  background: #00d9ff;
  }
 
-
-
-
-a,
-a:focus,
-a:hover {
-  color: #fff;
-  text-decoration: none;
-}
+// a,
+// a:focus,
+// a:hover {
+//   color: #fff;
+//   text-decoration: none;
+// }
 
 /* Custom default button */
 .btn-default,
@@ -85,42 +223,7 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-// .btn3d{
-//   color:white;
-//   // height: 15px;
-// }
 
-
-/*
- * Base structure
- */
-
-html,
-// body {
-// css for full size background image
- // background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
- //  // background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
- //  // background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
- //  // background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
- //  // background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-  
-
- 
- 
- // }
-.estatua {
-   background: url(http://bunow.com/wp-content/uploads/2013/10/the-statue-of-liberty.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    height: 100%;
-  /*background-color: #060;*/
-  color: #fff;
-
- text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
 .descripcion {
     position: absolute;
     left: 100px;
@@ -128,150 +231,7 @@ html,
    text-align: center;
    margin-left: 20%;
    margin-right: 20%;
-
-}
-.home {
-   text-decoration: none;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-   display: table;
-  width: 100%;
-  height: 100%; 
-  min-height: 100%;
-  // -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-  //         box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-// /* Padding for spacing */
-.inner {
-padding: 30px;
-}
-
-
-/*
- * Header
- */
-  .masthead-brand {
-    margin-top: 20px;
-
-    margin-bottom: 10px;
-
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 17px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.95);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
- 
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-    font-style: arial;
-  }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
-
-
-
-
-
-
+ }
 
 .btn3d {
     position:relative;
@@ -285,6 +245,7 @@ padding: 30px;
      margin-bottom:10px;
      margin-left:2px;
      margin-right:2px;
+
     
 }
 .btn3d:active:focus,
@@ -429,13 +390,14 @@ padding: 30px;
 
 
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  .pasaporte {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
 .new_form{
   margin-top: 120px;
 }
-// carusel
+// home page
+
+
+.link{
+  text-align: center
+}
+
+

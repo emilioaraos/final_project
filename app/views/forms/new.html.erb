@@ -1,5 +1,5 @@
 
-<div>
+<div class="form1">
 <img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
 <% if @form.errors.any? %>
 	<ul>
@@ -11,8 +11,7 @@
 <div class="form_fiance">
 
 <%= form_for [@user, @form] do |f| %>
-	<%= f.label :answer, 'Is the petitioner a U.S citizen?' %>:
-	<%#= f.label "Is the petitioner a U.S citizen?"%><br>
+	<%= f.label :answer, 'Is the petitioner a U.S citizen?' %><br>
 	<%= f.label :answer, 'True' %>
 	<%= f.radio_button :answer, "true", :value=> true%>
 	<%= f.label :answer, "False" %>
@@ -39,4 +38,5 @@
 	<%= f.submit 'Save' %>
 	<%= link_to('Back', user_forms_path(@user)) %>
 <% end %>
+</div>
 </div>

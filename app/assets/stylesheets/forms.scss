@@ -20,9 +20,7 @@ img {
   padding: 10px;
 
 }
-/*
-stylize any heading tags withing white-panel below
-*/
+
 
 .white-panel h1 {
   font-size: 1em;
@@ -48,10 +46,10 @@ stylize any heading tags withing white-panel below
 
 
 
-body {
-  color: #fff;
-  padding: 1.5em;
-}
+// body {
+//   color: #fff;
+//   padding: 1.5em;
+// }
 table {
   border-collapse: collapse;
   width: 100%;
@@ -104,7 +102,7 @@ td {
     width: 100%;
   }
 }
-/* Stack labels vertically on smaller screens */
+
 @media (max-width: 20em) {
   td {
     padding-left: 0.75em;

@@ -1,16 +1,9 @@
 
-<div>
-<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
-<%# if @form.errors.any? %>
-	<!-- <ul>
-		<%# @form.errors.full_messages.each do |error_msg| %>
-			<li><%#= error_msg %></li>
-		<%# end %>
-	</ul> -->
-<%# end %>
+<div class="form2">
+	<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
 <div class="form_fiance">
 
-<%= form_for [@user, @form],:url => {:action => "new_create", :id => @user} do |f| %>
+	<%= form_for [@user, @form],:url => {:action => "new_create", :id => @user} do |f| %>
 	<%= f.label :answer, 'Are you  at least 18 years old at the time of filling and have been a permanent resident of the U.S?' %>:
 	<%#= f.label "Is the petitioner a U.S citizen?"%><br>
 	<%= f.label :answer, 'True' %>

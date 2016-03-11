@@ -1,43 +1,12 @@
+<div class="form2">
+	<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
 <div class="form_page">
-<h1><%= @user.name %></h1>
-<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
-
-<!-- <ul> -->
-	<%# @forms.each do |form| %>
-		<!-- <li>
-			<%#= form.answer%> 
-			<%#= form.answerb%> 
-			<%#= form.answerc %>
-			<%#= form.answerd %>
-			<%#= link_to('Edit', edit_user_form_path(@user, form)) %>
-			<%#= link_to('Delete', user_form_path(@user, form), method: :delete, data: {confirm: 'Are you sure?'}) %>
-
-		</li> -->
-	<%# end %>
-<!-- </ul> -->
-
- </div> 
+	<h1><%= @user.name %></h1>
+	<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
+</div> 
 <div>
-
-
-
-
-
-
-<div>
-<%#= link_to('Fiancé Form', new_user_form_path(@user)) %>  <a href="forms/new"><button type="button" class="btn btn-primary btn-lg btn3d">Fiancé Form</button></a> 
-<br>
-<%#=link_to('Back', users_user_form_path) %>  <a href=" /users/user_form"><button type="button" class="btn btn-primary btn-lg btn3d">Back</button></a> 
- <%= link_to "Logout", destroy_user_session_path, data: { method: :delete } %> <!-- <a href=" /users/user_form"><button type="button" class="btn btn-primary btn-lg btn3d">Back</button></a>  -->
+	<span><a href="forms/new"><button type="button" class="btn btn-primary btn-lg btn3d">Fiancé Form</button></a></span>
+	<span><a href=" /users/user_form"><button type="button" class="btn btn-primary btn-lg btn3d">Back</button></a> </span><br>
+ 	<%= link_to "Logout", destroy_user_session_path, data: { method: :delete } %> 
 </div>
-<!-- <iframe width="420" height="345" autoplay="1"
-src="http://www.youtube.com/embed/XGSy3_Czz8k">  
-
-
-https://www.uscis.gov/sites/default/files/files/form/i-129f.pdf
-</iframe>
-</div> -->
-
-
-
-
+</div>

@@ -1,3 +1,4 @@
+<div class="form_edit">
 <% if @form.errors.any? %>
 	<ul>
 		<% @form.errors.full_messages.each do |error_msg| %>
@@ -21,3 +22,4 @@
 	<%= f.submit 'Edit' %>
 	<%= link_to('Back', user_forms_path(@user)) %>
 <% end %>
+</div>

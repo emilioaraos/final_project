@@ -1,88 +1,79 @@
 <% provide(:title, "Home") %>
-
-    <div class="site-wrapper estatua">
-       <div class="site-wrapper-inner">
-          <div class="cover-container">
-             <div class="masthead clearfix">
-                 <div class="inner">
-                      <h3 class="masthead-brand">ImmigrationProSE</h3>
-
-                          <ul class="nav masthead-nav">
-                           
-
-
-                              <li class="active">
-
-
-                                 <a href="/" class="home">Home</a>
-                            
-                                  <a href="/site/about">About</a>
-                               
-
-                               
-                                   <!-- <a href="/site/contact">Contact</a> -->
-
-                                   
-                              
-                                </li>
-                                <li> 
-                             <% if user_signed_in?%> 
-        <%= link_to("Logout", destroy_user_session_path, data: { method: :delete }) %>
-         <% end %>
-                            </li>
-
-                           </ul>
-                                  </div>
+  <div class="container-fluid">
+    <!-- Navigation Row -->
+    <div class="row nav-row row1">
+      <div class="col-xs-8 col1" >
+        ImmigrationProse
       </div>
-
-      <div class="inner cover descripcion">
-        <h1 class="cover-heading">WELCOME</h1>
-   
-         <p class="lead">In this site you will be able to learn more about certain  procedures  such as naturalization, replacements and renewal of your permanent resident card("Green Card"),employment authorization, fiancee visa for those who are outside of the states, among others.
-          Disclosure:
-         THE INFORMATION PROVIDED DOES NOT REPRESENT LEGAL ADVISE AND IS INTENDED FOR EDUCATIONAL PURPOSES ONLY.       
-         </p>
-
-
-
-                    
-
-
- 
-       			 <% unless user_signed_in?%> 
-    
-        <a href="users/sign_in"><button type="button" class="btn btn-primary btn-lg btn3d">LogIn</button></a>
-
-
-
-
-     <a href="users/sign_up"><button type="button" class="btn btn-primary btn-lg btn3d">SignUp</button></a> 
-
-            <% end %>
-
-
-      </div>
-    
-
-      <div class="mastfoot">
-      
-        <div class="inner">
-             
-
-      <p>© 2016 Lightman  <a href=
-          "https://github.com/emilioaraos">Github</a></p>
+    <div class="col-xs-4 col2" >
+        <nav class="nav-right">
+          <span><a href="/" id="color-nav">Home &nbsp &nbsp</a></span>
+          <span><a href="/site/about"id="color-nav">About</a></span>
+          <span><% if user_signed_in?%> 
+              <%= link_to("Logout", destroy_user_session_path, data: { method: :delete }) %>
+           <% end %></span>
         </div>
+    </div>
+    </nav>
+    <!--End  Navigation Row -->
+    <!-- Welcome Home -->
+     <div class="container-fluid">
+      <div class="row welcome-row liberty">
+        <img src="/assets/liberty.jpg" class="liberty">
+        <div class="col-xs-12">
+        
+        </div>
+   
+      </div>
+    </div>
+    <!-- End Welcome Home -->
+    <!-- Search Navigation -->
+    <div class="row search-nav-row">
+             <div class="sign_up">
+             <% unless user_signed_in?%> 
+                <a href="users/sign_in"><button type="button" class="btn btn-primary btn-lg btn3d">LogIn</button></a>
+                <a href="users/sign_up"><button type="button" class="btn btn-primary btn-lg btn3d">SignUp</button></a> 
+            <% end %>
+            </div>
+    </div>
+    <!-- End Search Navigation -->
+  </div>
+  <div class="container">
+    <!-- City Picture Row -->
+    <div class="row">
+      <div class="col-md-4 col-sm-6 city-picture">
+          <img src="/assets/immigra.jpg" alt="immigra" class="immigra">
+
+      </div>
+      <div class="col-md-4 col-sm-6 city-picture">
+
+      <br>
+      <br>
+      <br>
+       <p class="disclosure"> DISCLOSURE: THE INFORMATION PROVIDED DOES NOT REPRESENT LEGAL ADVISE.</p>
+       <p class="disclosure2"> In this site you will be able to learn more about certain  procedures  such as naturalization, replacements and renewal of your permanent resident card("Green Card"),employment authorization, fiancee visa for those who are outside of the states, among others.</p>
+      </div>
       
+        <div class="row">
+      <div class="col-md-4 col-sm-6 city-picture">
+          <img src="/assets/migra1.jpg" alt="migra1" class="migra1">
+
       </div>
 
-    </div>
-</div>
-
-</div>
-
-
-
-
-    
-      
+      </div>
      
+    </div>
+    <div class="foot">
+    <br>
+    <br>
+       <p>© 2016 &nbsp <a href=
+          "https://github.com/emilioaraos">EmilioAraos</a></p>
+    </div>
+    <!-- City Picture Row -->
+  </div>
+
+
+
+
+
+      

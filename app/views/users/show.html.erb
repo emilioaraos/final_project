@@ -1,3 +1,5 @@
+<div class="form2">
+	<img src="/assets/pasaporte.jpg" alt="Passport" class="pasaporte">
 <% if user_signed_in? %>
 	<h2>Welcome <%= current_user.name %> !</h2>
 	<%= link_to 'Logout', destroy_user_session_path, method: 'DELETE' %>
@@ -5,7 +7,7 @@
 	<h2>Nobody logged in</h2>
 <% end %>
 
-
+</div>
 
 
 
